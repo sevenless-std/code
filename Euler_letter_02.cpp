@@ -5,7 +5,7 @@
 using namespace std;
 using ll=long long;
 
-vector<ll> letter(100,1);
+vector<ll> letter(100,-1);
 
 ll derangement(int n)
 {
