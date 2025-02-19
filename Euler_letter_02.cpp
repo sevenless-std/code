@@ -17,16 +17,28 @@ ll derangement(int n)
     {
         return 1;
     }
-    else
+    else if(n>2)
     {
         return (n-1)*(derangement(n-1)+derangement(n-2));
     }
+    else
+    {
+        return -1;
+    }
+
 }
 
 
 int main()
 {
     int n; cin>>n;
-    cout<<derangement(n);
+    if(derangement(n)>=0)
+    {
+        cout<<derangement(n);
+    }
+    else
+    {
+        cout<<"error";
+    }
     return 0;
 }
